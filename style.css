@@ -1,0 +1,110 @@
+/*
+Theme Name: Author Child Theme
+Theme URI: https://array.is/themes/author-wordpress-theme/
+Description: Author is a very clean blog style theme. Post your photos, articles or video with this responsive design.
+Author: Array
+Author URI: https://array.is
+Version: 1.0
+Template: author
+Tags: blue, gray, light, white, two-columns, right-sidebar, fluid-layout, custom-background, custom-menu, editor-style, featured-images, sticky-post, theme-options, translation-ready
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/*
+This is a starter style.css file for your child theme. For more
+information about child themes, visit the following web page:
+http://codex.wordpress.org/Child_Themes
+*/
+
+/* Add your customizations below this line */
+
+.logo-text span {
+	float:left;
+	display: block;
+}
+.logo-text {
+    display: inline-block;
+    float: left;
+    font-size: 34px;
+    line-height: 1;
+    padding-left: 15px;
+    width: auto;
+	margin:29px 0 0 0;
+}
+.logo-img {
+	float:left;
+}
+.logo {
+    border-radius: 60px; 
+}/*
+.logo-text, .top-bar{
+	padding-top:30px;
+}*/
+
+
+.header-inside {
+	padding:20px 25px;
+}
+
+
+.main-nav {
+	margin:42px 0 0 0;
+}
+
+.rotate{
+-webkit-transition-duration: 0.8s;
+-moz-transition-duration: 0.8s;
+-o-transition-duration: 0.8s;
+transition-duration: 0.8s;
+
+-webkit-transition-property: -webkit-transform;
+-moz-transition-property: -moz-transform;
+-o-transition-property: -o-transform;
+transition-property: transform;
+
+overflow:hidden;
+
+}
+
+.rotate:hover
+{
+-webkit-transform:rotate(360deg);
+-moz-transform:rotate(360deg);
+-o-transform:rotate(360deg);
+}
+
+
+/* Responsive Start */
+@media (min-width: 992px) and (max-width: 1199px){ 
+.widget_search .submit { padding:0 8px !important; }
+.widget_search .field { padding-right:80px !important; }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+.zi-header { text-align:center; }
+.logo-img { width:auto !important; display:inline-block; }
+.logo-text { text-align:left; }
+.menu-toggle { margin-top:35px !important; }
+.widget_search .field { padding-right:93px !important; }
+#content-wrap { padding:35px 15px !important; }
+#footer { padding:35px 0 !important; }
+}
+
+@media (max-width: 767px) { 
+.zi-header { text-align:center; clear:both; }
+.logo-img { width:auto !important; float:none; }
+.logo-img img { display:inline-block; float:none; }
+.widget_search .field { padding-right:94px !important; }
+.entry-title { font-size:28px !important; }
+.widget h2 { padding:0 0 10px 0; }
+#footer .copyright { margin-top:10px !important; }
+}
+
+@media (min-width: 569px) and (max-width: 767px){
+}
+
+@media (min-width: 240px) and (max-width: 568px){
+.title-meta { font-size:9px !important; }
+}
+/* Responsive End */
