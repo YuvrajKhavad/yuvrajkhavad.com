@@ -75,6 +75,12 @@ overflow:hidden;
 }
 
 
+/* 29-3-2017 Start */
+.mc4wp-form-fields .form-group { position: relative; }
+.mc4wp-form-fields .yk-subscribe { position: absolute; right: 0; top: 0; }
+.mc4wp-form-fields .form-control { padding: 10px 40px 10px 10px; }
+/* 29-3-2017 End */
+
 /* Responsive Start */
 @media (min-width: 992px) and (max-width: 1199px){ 
 .widget_search .submit { padding:0 8px !important; }
